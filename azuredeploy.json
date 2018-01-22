@@ -85,8 +85,10 @@
                         "osType": "Windows",
                         "name": "template-osDisk.187d9455-535b-48b4-b10d-8370ec9bad42.vhd",
                          "image": {
-        "uri": "https://redshirttourparisiot2018.blob.core.windows.net/publicimages/HandsOnLab20180122144602.vhd"
-      },
+                             "uri": "https://redshirttourparisiot2018.blob.core.windows.net/publicimages/HandsOnLab20180122144602.vhd"
+                         },
+                        "vhd": {
+                            "uri": "[concat(concat(reference(resourceId('hol-azure-redshirt-tour-paris', 'Microsoft.Storage/storageAccounts', parameters('diagnosticsStorageAccountName')), '2015-06-15').primaryEndpoints['blob'], 'vhds/'), parameters('virtualMachineName'), '20180122144602.vhd')]"
                         "createOption": "fromImage",
                         "managedDisk": {
                             "storageAccountType": "Premium_LRS"
