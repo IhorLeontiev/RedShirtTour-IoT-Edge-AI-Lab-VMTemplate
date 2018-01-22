@@ -6,46 +6,49 @@
             "value": "westeurope"
         },
         "virtualMachineName": {
-            "value": "holiotedge"
+            "value": "HandsOnLab1"
         },
         "virtualMachineSize": {
-            "value": "Standard_D4s_v3"
+            "value": "Standard_E2s_v3"
         },
         "adminUsername": {
-            "value": "viseo-adm"
+            "value": "HandsOnLab1"
         },
         "virtualNetworkName": {
-            "value": "hol-azure-redshirt-tour-paris-vnet"
+            "value": "Red-Shirt-Tour-Hol-vnet1"
         },
         "networkInterfaceName": {
-            "value": "holiotedge679"
+            "value": "handsonlab8741"
         },
         "networkSecurityGroupName": {
-            "value": "holiotedge-nsg"
+            "value": "HandsOnLab1-nsg"
         },
-        "adminPassword": {
-            "value": null
+        "storageAccountName": {
+            "value": "redshirthol1"
+        },
+        "storageAccountType": {
+            "value": "Premium_LRS"
         },
         "diagnosticsStorageAccountName": {
-            "value": "holazureredshirttourp338"
+            "value": "redshirttourholdiag1"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/redshirttourholdiag1"
         },
         "diagnosticsStorageAccountType": {
             "value": "Standard_LRS"
         },
-        "diagnosticsStorageAccountId": {
-            "value": "Microsoft.Storage/storageAccounts/holazureredshirttourp338"
-        },
         "addressPrefix": {
-            "value": "10.0.3.0/24"
+            "value": "10.0.2.0/24"
         },
-        "subnetName": {
-            "value": "default"
-        },
+      "subnetName": {
+        "value": "default"
+      },
         "subnetPrefix": {
-            "value": "10.0.3.0/24"
+            "value": "10.0.2.0/24"
         },
         "publicIpAddressName": {
-            "value": "holiotedge-ip"
+            "value": "HandsOnLab-ip1"
         },
         "publicIpAddressType": {
             "value": "Dynamic"
