@@ -81,10 +81,12 @@
                     "vmSize": "[parameters('virtualMachineSize')]"
                 },
                 "storageProfile": {
-                    "imageReference": {
-                        "id": "/subscriptions/76b0c7e0-1ae2-4ef4-907a-506503b246d5/resourceGroups/sheiko-we-iot/providers/Microsoft.Compute/images/Hands-On-Lab-image-20180122132903"
-                    },
                     "osDisk": {
+                        "osType": "Windows",
+                        "name": "template-osDisk.187d9455-535b-48b4-b10d-8370ec9bad42.vhd",
+                         "image": {
+        "uri": "https://redshirttourparisiot2018.blob.core.windows.net/publicimages/HandsOnLab20180122144602.vhd"
+      },
                         "createOption": "fromImage",
                         "managedDisk": {
                             "storageAccountType": "Premium_LRS"
