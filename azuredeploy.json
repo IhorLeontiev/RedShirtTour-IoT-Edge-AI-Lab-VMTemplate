@@ -93,7 +93,7 @@
                       "uri": "https://redshirttourparisiot2018.blob.core.windows.net/publicimages/HandsOnLab20180122144602.vhd"
                     },
                     "vhd": {
-                      "uri": "[concat(concat(reference(resourceId('{resourceGroupName}', 'Microsoft.Storage/storageAccounts', parameters('storageAccountName')), '2015-06-15').primaryEndpoints['blob'], 'vhds/'), parameters('virtualMachineName'), '20180122144602.vhd')]"
+                      "uri": "[concat(concat(reference(resourceId({resourceGroupName}, 'Microsoft.Storage/storageAccounts', parameters('storageAccountName')), '2015-06-15').primaryEndpoints['blob'], 'vhds/'), parameters('virtualMachineName'), '20180122144602.vhd')]"
                     },
                     "name": "[parameters('virtualMachineName')]"
                   },
@@ -109,7 +109,7 @@
                 "diagnosticsProfile": {
                     "bootDiagnostics": {
                         "enabled": true,
-                        "storageUri": "[reference(resourceId('{resourceGroupName}', 'Microsoft.Storage/storageAccounts', parameters('diagnosticsStorageAccountName')), '2015-06-15').primaryEndpoints['blob']]"
+                        "storageUri": "[reference(resourceId(resourceGroup().Name, 'Microsoft.Storage/storageAccounts', parameters('diagnosticsStorageAccountName')), '2015-06-15').primaryEndpoints['blob']]"
                     }
                 }
             },
