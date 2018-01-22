@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "virtualMachineName": {
+            "value": "holiotedge"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D4s_v3"
+        },
+        "adminUsername": {
+            "value": "viseo-adm"
+        },
+        "virtualNetworkName": {
+            "value": "hol-azure-redshirt-tour-paris-vnet"
+        },
+        "networkInterfaceName": {
+            "value": "holiotedge679"
+        },
+        "networkSecurityGroupName": {
+            "value": "holiotedge-nsg"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "holazureredshirttourp338"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/holazureredshirttourp338"
+        },
+        "addressPrefix": {
+            "value": "10.0.3.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "10.0.3.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "holiotedge-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        }
+    }
+}
